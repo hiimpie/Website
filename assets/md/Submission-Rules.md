@@ -1,4 +1,4 @@
-<img style="display: block;margin-left: auto;margin-right: auto;" src="../website/assets/headers/submissionrules.png" width="400"/>
+<img style="display: block;margin-left: auto;margin-right: auto;" src="../assets/headers/submissionrules.png" width="400"/>
 <center>Up to date as of 19/4/22!</center>
 <br/>
 
@@ -10,9 +10,9 @@ This is purely community ran and all submissions are done by the community.</cen
 <br/>
 
 # <center>Contents</center>
-[Global Rules](#Rules)
+[<center>Global Rules</center>](#Rules)
 
-[Request to be Removed](#Request-to-be-Removed)
+[<center>Request to be Removed</center>](#Request-to-be-Removed)
 
 <br/>
 
@@ -37,10 +37,12 @@ This is purely community ran and all submissions are done by the community.</cen
 
 ---
 ## Art
->
+>Drew a few Jerma Maids in your life? 😎 Show them off here!
 - Must not be traced
 - Can be only your own artwork unless given permission by OC to submit it
 - Has to be related to Jerma985/Community
+
+>You can only submit up to 3 pieces
 
 <br/>
 
@@ -52,25 +54,24 @@ This is purely community ran and all submissions are done by the community.</cen
 <br/>
 
 ## Video Edits/Memes
->
+>Recreated Jerma SUS in Smite? Show us!
 
 ### **Video Edits**
--
+- Must be relevant with Jerma's community in some form
 
 ### **Memes**
-- 
+- Must be relevant with Jerma's community
+- Must be your own
 
 <br/>
 
 ## Community Events & Accounts
->Showcase the events you have hosted for the community/Social Media Accounts (e.g. Daily Sheeto)
-
+>Showcase the events you have hosted for the community &/or Social Media Accounts (e.g. Daily Sheeto)
 
 ### **Events**
 - They must be hosted within 2022
 - Ran by the Jerma Community
 - Have some relevance to Jerma/Jerma's Community
-
 
 ### **Accounts**
 - Must have posted in 2022
@@ -80,13 +81,13 @@ This is purely community ran and all submissions are done by the community.</cen
 <br/>
 
 ---
-## Join the Team
+## Join The Team
 >Would you like to be apart of the team and create sweet graphics/moderate the stream? [Please go here!]()
 
 <br/>
 
 ## Request to be Removed
->If you have changed your mind and want to remove your content from the stream, [please go here!]()
+>If you have changed your mind and want to remove your content from the stream, [Please fill out the form]()
 
 <br/>
 
@@ -96,4 +97,4 @@ This is purely community ran and all submissions are done by the community.</cen
 <br/>
 
 ## Contact
->If you wish to contact, please email at: jexpo22@gmail.com
+>If you wish to contact, please email at: [jexpo22@gmail.com](mailto:jexpo22@gmail.com)

@@ -1,0 +1,10 @@
+.markdown-body h1, p {
+    color: white !important;
+}
+.markdown-body {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+img {
+    background-color: none !important;
+}

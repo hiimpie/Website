@@ -11,6 +11,34 @@
 <!-- Simply set the `src` attribute to your MD file and win -->
     </head>
     <body>
-        <zero-md src="assets/md/Submission-Rules.MD"></zero-md>
+        <nav>
+            <logo>
+               <a href="/"><img src="./assets/logo/logo.png"/></a>
+            </logo>
+            <links>
+                <a href="/">Twitch</a>
+                <a href="/">Submission Rules</a>
+                <a class="subbutton">Submit</a>
+            </links>
+        </nav>
+        <content>
+        <zero-md src="assets/md/Submission-Rules.MD">
+            <template>
+                <!-- Load external stylesheets with a `<link rel="stylesheet">` tag -->
+                <link rel="stylesheet" href="./styles/md.css" />
+                <style>
+                    .markdown-body {
+                        color: white;
+                        width: 700px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    a {
+                        color: #5FC4CC;
+                    }
+                  </style>
+            </template>
+        </zero-md>
+        </content>
     </body>
 </html>
