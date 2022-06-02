@@ -1,80 +1,181 @@
-/* Gather Main Theme Font (Jost) */
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;800;900&display=swap');
-/* HTML & Body Theme Setup */
+
+:root {
+    --jexpo-font: 'Jost', sans-serif;
+    --jexpo-bg: #150E40;
+    --jexpo-link-color: white !important;
+    --jexpo-body-color: white !important;
+    --page-gutter: 40px !important;
+    --page-max-width: 1260px !important;
+    --num-grid-columns: 12 !important;
+}
+
 html, body {
-    font-family: 'Jost', sans-serif;
-    background-color: #150E40;
-    color: white !important;
-    height: 100%;
-    width: 100%;
+    font-family: var(--jexpo-font);
     margin: 0;
-}
-/* Adding restraint to content & doesn't overflow into nav */
-content {
-    padding-top: 40px !important;
-    position: absolute;
-    top: 80px;
+    background: var(--jexpo-bg);
     width: 100%;
 }
-/* Navigation Bar */
-nav {
+
+.grid {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.row {
+    width: 100%;
+    max-width: 1260px;
+    max-width: var(--page-max-width);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(var(--num-grid-columns),1fr);
+    gap: 0 20px;
+    padding: 0 24px;
+    padding: 0 var(--page-gutter);
+    position: sticky;
+    top: 0;
+    z-index: 5000;
+}
+
+.row2 {
+    width: 100%;
+    max-width: 1260px;
+    max-width: var(--page-max-width);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: grid;
+    gap: 0 20px;
+    padding: 0 24px;
+    padding: 0 var(--page-gutter);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.header {
+    z-index: 9998;
+}
+
+.wrapper {
+    grid-column: span var(--num-grid-columns);
+}
+
+.nav {
     height: 80px;
     width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     background-color: rgb(45 31 129 / 40%);
-    position: fixed;
-    display: block;
-    box-shadow: 0px 0px;
     overflow: hidden;
     backdrop-filter: blur(10px);
     z-index: 500;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-}
-/* "Jexpo" Logo */
-nav logo {
-    height: 50px;
-    margin: 15px;
-    display: inline-block;
-}
-/* Jexpo Logo Link to Home */
-nav logo a {
-    height: 50px;
-    display: block;
-}
-/* Logo Img Setup */
-nav logo img {
-    max-height:100%;
-}
-/* Navigation Links Wrapper */
-links {
-    height: 80px;
-    position: absolute;
-    right: 0;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-/* Navigation Links */
-links a {
-    margin-right: 15px;
-    color: white;
-    text-decoration: none;
-}
-/* Submit Button (Reminder to set opacity to 100) */
-.subbutton {
-    background: linear-gradient(#5FC4CC, #4576B1);
-    padding: 10;
     padding-left: 20px;
     padding-right: 20px;
+    position: sticky;
+}
+
+.logoLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.logoLink img {
+    width: 100px;
+}
+
+.links {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: right;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+.link {
+    color: var(--jexpo-link-color);
+    text-decoration: none;
+}
+
+.navLink {
+    margin: 5px;
+    padding: 5px;
+}
+
+.subbuttonwrap {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 120px;
+    text-align: end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+}
+
+.subbutton {
+    background: linear-gradient(#5FC4CC, #4576B1);
+    padding: 7px 16px;
     font-weight: 600;
     border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    line-height: 24px;
 
     opacity: 10%;
     cursor: not-allowed;
 }
-/* Home Page Banner Setup */
+
 .banner {
+    grid-column: 3/span 8;
     text-align: center;
-    display: block;
-    margin: auto;
+    color: white;
+}
+
+@media screen and (max-width: 1023px) {
+    .row {
+        padding: 0 !important;
+    }
+    .nav {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapperDesktop {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
 }
