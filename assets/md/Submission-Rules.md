@@ -1,4 +1,4 @@
-<img style="display: block;margin-left: auto;margin-right: auto;" src="../assets/headers/submissionrules.png" width="400"/>
+<img style="display: block;margin-left: auto;margin-right: auto;width:100%;max-width:400px;" src="../assets/headers/submissionrules.png"/>
 <center>Up to date as of 19/4/22!</center>
 <br/>
 
